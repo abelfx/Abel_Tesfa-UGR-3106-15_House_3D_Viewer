@@ -3,33 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>House 3D Viewer</title>
+    <title>3D House Viewer</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="canvas-container"></div>
+    <!-- Main Application Section -->
+    <main id="main-content">
+      <section id="canvas-wrapper" aria-label="3D House Model">
+        <div id="canvas-container"></div>
+      </section>
+    </main>
 
-      <div id="info-panel" class="hidden">
-        <div class="panel-header">
-          <span id="part-name">Name: </span>
-          <button id="close-panel">&times;</button>
-        </div>
-        <p id="part-description">Description:</p>
+    <!-- Side Information Panel -->
+    <aside id="info-panel" class="hidden" aria-live="polite">
+      <div class="panel-header">
+        <span id="part-name">Name:</span>
+        <button id="close-panel" aria-label="Close Panel">&times;</button>
       </div>
+      <p id="part-description">Description:</p>
+    </aside>
 
-      <div id="controls-info">
+    <!-- Control Instructions -->
+    <footer>
+      <section id="controls-info" aria-label="Viewer Controls">
         <ul>
-          <li><strong>Zooming:</strong> Scroll</li>
-          <li><strong>Pan:</strong> Right Click and Drag</li>
-          <li><strong>Rotate:</strong> Left Click and Drag</li>
+          <li><strong>Zoom:</strong> Scroll Wheel</li>
+          <li><strong>Pan:</strong> Right Click + Drag</li>
+          <li><strong>Rotate:</strong> Left Click + Drag</li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </footer>
 
+    <!-- Three.js and OrbitControls -->
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
 
+    <!-- Main App Script -->
     <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
