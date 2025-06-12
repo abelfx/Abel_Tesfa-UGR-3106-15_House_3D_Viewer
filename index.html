@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House 3D Viewer</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="canvas-container"></div>
+
+      <div id="info-panel" class="hidden">
+        <div class="panel-header">
+          <span id="part-name">Name: </span>
+          <button id="close-panel">&times;</button>
+        </div>
+        <p id="part-description">Description:</p>
+      </div>
+
+      <div id="controls-info">
+        <ul>
+          <li><strong>Zooming:</strong> Scroll</li>
+          <li><strong>Pan:</strong> Right Click and Drag</li>
+          <li><strong>Rotate:</strong> Left Click and Drag</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
