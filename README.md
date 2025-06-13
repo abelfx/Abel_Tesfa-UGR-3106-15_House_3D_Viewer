@@ -1,3 +1,4 @@
+## Abel Tesfa...........UGR/3106/15
 # 🏠 Interactive 3D House Viewer (Three.js)
 
 An interactive 3D product viewer built with **Three.js**, featuring a **house model** composed entirely from basic geometries (boxes, cylinders, spheres, etc.). This project demonstrates foundational 3D concepts including scene setup, camera control, lighting, raycasting, and animation.
